@@ -1,0 +1,32 @@
+.hero{min-height:680px}
+.hero h1{font-size:clamp(4rem,8vw,8rem);line-height:.86;margin:7vh 0 3vh}
+.roundButton{width:132px;height:132px}
+.work,.services,.about,.quote,.contact{padding-top:7rem;padding-bottom:7rem}
+.blockTitle h2,.services h2{font-size:clamp(3rem,5.8vw,5.8rem)}
+.projectImage{height:440px}
+.projectCopy h3{font-size:2rem}
+.aboutLead h2{font-size:clamp(2.8rem,5vw,5rem)}
+.quote blockquote{font-size:clamp(2.3rem,4.4vw,4.4rem)}
+.contact h2{font-size:clamp(4rem,9vw,9rem)}
+.testimonials{padding:7rem 3vw;background:var(--cream)}
+.testimonials header{display:grid;grid-template-columns:1fr 2fr 1fr;align-items:start;margin-bottom:4rem}
+.testimonials header>span{font-size:.68rem;text-transform:uppercase;letter-spacing:.15em}
+.testimonials h2{font-size:clamp(2.8rem,5vw,5rem);letter-spacing:-.065em;line-height:.92;margin:0}
+.testimonials header>p{line-height:1.6;margin:0}
+.testimonialGrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid;border-left:1px solid}
+.testimonialGrid article{min-height:250px;padding:2rem;border-right:1px solid;border-bottom:1px solid;display:flex;flex-direction:column;justify-content:space-between}
+.testimonialGrid article>p{font-size:1.5rem;line-height:1.35;letter-spacing:-.025em;max-width:580px}
+.testimonialGrid article div{display:flex;flex-direction:column;gap:.35rem}
+.testimonialGrid b{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
+.testimonialGrid span{font-size:.72rem;color:#777}
+@media(max-width:800px){
+  .hero{min-height:620px}
+  .hero h1{font-size:3.65rem;margin-top:7rem}
+  .roundButton{width:108px;height:108px;padding:1.2rem}
+  .projectImage{height:350px}
+  .testimonials{padding:5rem 5vw}
+  .testimonials header{grid-template-columns:1fr;gap:2rem}
+  .testimonialGrid{grid-template-columns:1fr}
+  .testimonialGrid article{min-height:210px}
+  .testimonialGrid article>p{font-size:1.3rem}
+}

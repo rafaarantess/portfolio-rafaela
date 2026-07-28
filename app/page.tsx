@@ -68,6 +68,16 @@ export default function Home() {
       <p>Felipe Augusto — cliente</p>
     </section>
 
+    <section className="testimonials">
+      <header><span>04 / Confiança construída</span><h2>Quem trabalha comigo,<br/>conta melhor.</h2><p>Depoimentos de clientes sobre processo, comunicação e qualidade de entrega.</p></header>
+      <div className="testimonialGrid">
+        <article><p>“Muito competente, responsável e dedicada. Trabalho perfeito. Recomendo muito.”</p><div><b>Leticia</b><span>Canacaju</span></div></article>
+        <article><p>“Profissional acima da média. Pontual, aberta a melhorias e comunicativa.”</p><div><b>Larissa</b><span>Cliente Workana</span></div></article>
+        <article><p>“Cumpriu todos os requisitos e entregou o trabalho antes do tempo previsto.”</p><div><b>Marcelo Leite</b><span>Cliente Workana</span></div></article>
+        <article><p>“Muito ágil, aberta às modificações e com certeza voltarei a contratar.”</p><div><b>Fernand Stallone</b><span>Cliente Workana</span></div></article>
+      </div>
+    </section>
+
     <section className="contact" id="contact">
       <span>Tem uma ideia?</span><h2>Vamos dar<br/>forma a ela.</h2>
       <div><a href="mailto:rafaela.arantes.rj@gmail.com">rafaela.arantes.rj@gmail.com ↗</a><a href="https://linkedin.com/in/rafaelaamelo">LinkedIn ↗</a></div>
