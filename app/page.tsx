@@ -1,76 +1,77 @@
 const projects = [
-  { title: "Canacaju", type: "Direção editorial · Moda", image: "/projects/canacaju.png", className: "wide" },
-  { title: "Aiurotrek", type: "Design institucional · Turismo", image: "/projects/aiurotrek.png", className: "" },
-  { title: "Micaela Castaldi", type: "Identidade visual · Marca pessoal", image: "/projects/micaela.png", className: "tall" },
-  { title: "Narayane Martins", type: "Design de proposta · Consultoria", image: "/projects/narayane.png", className: "" },
-];
-
-const testimonials = [
-  ["Conseguiu traduzir exatamente minhas ideias e o que queria transmitir.", "Felipe Augusto · Aiurotrek"],
-  ["Muito competente, responsável e dedicada. Trabalho perfeito.", "Leticia · Canacaju"],
-  ["Profissional acima da média. Pontual, comunicativa e aberta a melhorias.", "Larissa · Workana"],
+  { n:"01", title:"Canacaju", tag:"Design editorial", text:"Direção visual e diagramação de catálogos para três coleções de moda praia.", image:"/projects/canacaju.png", tone:"coral" },
+  { n:"02", title:"Aiurotrek", tag:"Comunicação de marca", text:"Um folder de expedição que transforma informação complexa em uma experiência clara.", image:"/projects/aiurotrek.png", tone:"blue" },
+  { n:"03", title:"Micaela Castaldi", tag:"Identidade visual", text:"Um sistema de marca sensível e expressivo para uma profissional de Psicologia.", image:"/projects/micaela.png", tone:"lime" },
+  { n:"04", title:"Narayane Martins", tag:"Design de proposta", text:"Apresentação comercial com linguagem visual coerente, elegante e direta.", image:"/projects/narayane.png", tone:"violet" },
 ];
 
 export default function Home() {
-  return (
-    <main>
-      <nav className="nav">
-        <a className="brand" href="#inicio">Rafaela Arantes</a>
-        <div className="navlinks">
-          <a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a>
-        </div>
-      </nav>
+  return <main>
+    <nav className="nav">
+      <a className="logo" href="#top">RA<span>®</span></a>
+      <div className="navCenter"><a href="#work">Projetos</a><a href="#about">Sobre</a><a href="#services">Serviços</a></div>
+      <a className="navCta" href="mailto:rafaela.arantes.rj@gmail.com">Vamos conversar ↗</a>
+    </nav>
 
-      <section className="hero" id="inicio">
-        <p className="eyebrow">Estratégia de marca & presença digital</p>
-        <h1>Ideias transformadas em marcas que <em>fazem sentido.</em></h1>
-        <p className="intro">Uno identidade, conteúdo e experiência digital para construir marcas claras, coerentes e memoráveis — com uma abordagem criativa informada pela Psicologia.</p>
-        <div className="actions"><a className="button" href="#projetos">Conheça os projetos</a><a className="textlink" href="#contato">Vamos conversar ↗</a></div>
-        <span className="heroNumber">RA — 26</span>
-      </section>
+    <section className="hero" id="top">
+      <div className="heroTop"><span>Estratégia de marca</span><span>Design & conteúdo</span><span>Rio de Janeiro · PT/EN</span></div>
+      <h1>Marcas com<br/><span>clareza,</span> presença<br/>e personalidade.</h1>
+      <div className="heroBottom">
+        <p>Estratégia, identidade e comunicação digital reunidas para transformar boas ideias em marcas que as pessoas entendem e lembram.</p>
+        <a className="roundButton" href="#work">Explorar projetos <b>↓</b></a>
+      </div>
+      <div className="orb"><span>Brand<br/>thinking</span></div>
+    </section>
 
-      <section className="proof">
-        <span><strong>+30</strong> clientes atendidos</span>
-        <span><strong>14</strong> depoimentos</span>
-        <span><strong>PT · EN</strong> atuação profissional</span>
-        <span><strong>2022—26</strong> trajetória em marketing</span>
-      </section>
+    <div className="ticker"><div>MARCA ✦ CONTEÚDO ✦ DESIGN ✦ EXPERIÊNCIA DIGITAL ✦ COMPORTAMENTO ✦ MARCA ✦ CONTEÚDO ✦ DESIGN ✦</div></div>
 
-      <section className="section projects" id="projetos">
-        <header className="sectionHeader"><div><p className="eyebrow">Trabalhos selecionados</p><h2>Projetos com intenção,<br/>clareza e personalidade.</h2></div><p>Uma seleção de identidades, projetos editoriais e materiais de comunicação construídos para diferentes marcas e momentos.</p></header>
-        <div className="projectGrid">
-          {projects.map((p, i) => <article className={`projectCard ${p.className}`} key={p.title}>
-            <div className="imageWrap"><img src={p.image} alt={`Projeto ${p.title}`} /></div>
-            <p className="index">0{i + 1}</p><h3>{p.title}</h3><p>{p.type}</p>
-          </article>)}
-        </div>
-      </section>
+    <section className="work" id="work">
+      <header className="blockTitle"><span>01 / Projetos selecionados</span><h2>Trabalho que<br/>fala por si.</h2><p>Uma seleção de projetos que conecta pensamento estratégico, cuidado visual e comunicação clara.</p></header>
+      <div className="projectList">
+        {projects.map(p=><article className={`project ${p.tone}`} key={p.title}>
+          <div className="projectMeta"><span>{p.n}</span><span>{p.tag}</span></div>
+          <div className="projectImage"><img src={p.image} alt={`Projeto ${p.title}`}/></div>
+          <div className="projectCopy"><h3>{p.title}</h3><p>{p.text}</p><span className="arrow">↗</span></div>
+        </article>)}
+      </div>
+    </section>
 
-      <section className="services" id="servicos">
-        <p className="eyebrow">Como posso ajudar</p><h2>Uma visão integrada<br/>da sua presença de marca.</h2>
-        <div className="serviceGrid">
-          <div><b>01</b><h3>Marca & Identidade</h3><p>Posicionamento visual, identidade, direção criativa e materiais que dão consistência à marca.</p></div>
-          <div><b>02</b><h3>Conteúdo & Comunicação</h3><p>Conteúdo estratégico, social media e campanhas que transformam mensagem em conexão.</p></div>
-          <div><b>03</b><h3>Experiências Digitais</h3><p>Materiais editoriais, landing pages e pontos de contato pensados para informar e envolver.</p></div>
-        </div>
-      </section>
+    <section className="numbers">
+      <div><strong>30+</strong><span>clientes atendidos</span></div>
+      <div><strong>14</strong><span>depoimentos</span></div>
+      <div><strong>04</strong><span>anos de experiência</span></div>
+      <div><strong>PT/EN</strong><span>comunicação bilíngue</span></div>
+    </section>
 
-      <section className="about section" id="sobre">
-        <div><p className="eyebrow">Sobre Rafaela</p><h2>Estratégia com sensibilidade. Criação com método.</h2></div>
-        <div className="aboutCopy"><p>Sou formada em Marketing Digital e Psicologia. Essa combinação me ajuda a enxergar marcas para além da estética: como sistemas de percepção, comunicação e experiência.</p><p>Desde 2022, transito entre projetos independentes e ambientes institucionais, com experiência em design, conteúdo, social media e comunicação em português e inglês.</p><a className="textlink" href="https://linkedin.com/in/rafaelaamelo">Conheça minha trajetória ↗</a></div>
-      </section>
+    <section className="services" id="services">
+      <header><span>02 / O que eu faço</span><h2>Da ideia ao ponto<br/>de contato.</h2></header>
+      <div className="serviceRows">
+        <div><b>01</b><h3>Marca & identidade</h3><p>Posicionamento visual, sistemas de identidade e direção criativa.</p><i>↗</i></div>
+        <div><b>02</b><h3>Conteúdo & social</h3><p>Estratégia, campanhas e conteúdo que traduzem a voz da marca.</p><i>↗</i></div>
+        <div><b>03</b><h3>Experiências digitais</h3><p>Materiais editoriais, landing pages e comunicação para o digital.</p><i>↗</i></div>
+      </div>
+    </section>
 
-      <section className="testimonials">
-        <p className="eyebrow">O que dizem</p>
-        <div className="quotes">{testimonials.map(([quote, name]) => <blockquote key={name}><p>“{quote}”</p><cite>{name}</cite></blockquote>)}</div>
-      </section>
+    <section className="about" id="about">
+      <span className="sectionTag">03 / Sobre</span>
+      <div className="aboutLead"><p>Marketing encontra Psicologia.</p><h2>Estratégia com<br/><em>sensibilidade.</em><br/>Criação com método.</h2></div>
+      <div className="aboutText">
+        <p>Sou Rafaela Arantes, profissional de marca e presença digital. Minha formação em Marketing Digital e Psicologia me ajuda a enxergar marcas como sistemas de percepção, comunicação e experiência — não apenas como estética.</p>
+        <p>Desde 2022, atuo entre projetos independentes e ambientes institucionais, conectando design, conteúdo e estratégia em português e inglês.</p>
+        <a href="https://linkedin.com/in/rafaelaamelo">Ver trajetória no LinkedIn ↗</a>
+      </div>
+    </section>
 
-      <section className="contact" id="contato">
-        <p className="eyebrow">Vamos conversar</p><h2>Uma marca mais clara<br/>começa por uma boa conversa.</h2>
-        <p>Para projetos, parcerias ou oportunidades profissionais.</p>
-        <div className="actions"><a className="button light" href="mailto:rafaela.arantes.rj@gmail.com">Enviar uma mensagem</a><a className="textlink lightText" href="https://linkedin.com/in/rafaelaamelo">LinkedIn ↗</a></div>
-      </section>
-      <footer><span>Rafaela Arantes Melo</span><span>Rio de Janeiro · Brasil</span><span>© 2026</span></footer>
-    </main>
-  );
+    <section className="quote">
+      <span>Depoimento · Aiurotrek</span>
+      <blockquote>“Conseguiu traduzir exatamente minhas ideias e o que eu queria transmitir. O projeto me surpreendeu positivamente.”</blockquote>
+      <p>Felipe Augusto — cliente</p>
+    </section>
+
+    <section className="contact" id="contact">
+      <span>Tem uma ideia?</span><h2>Vamos dar<br/>forma a ela.</h2>
+      <div><a href="mailto:rafaela.arantes.rj@gmail.com">rafaela.arantes.rj@gmail.com ↗</a><a href="https://linkedin.com/in/rafaelaamelo">LinkedIn ↗</a></div>
+    </section>
+    <footer><span>Rafaela Arantes © 2026</span><span>Marca · Design · Conteúdo</span><a href="#top">Voltar ao topo ↑</a></footer>
+  </main>
 }
