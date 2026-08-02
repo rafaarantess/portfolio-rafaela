@@ -23,7 +23,7 @@ const credentials = [
 ];
 
 export default function EducationPage(){return <main>
-  <header className="siteHeader"><Link className="wordmark" href="/">Rafaela Arantes</Link><nav><Link href="/">Início</Link><Link href="/projetos">Projetos</Link><Link href="/depoimentos">Depoimentos</Link><a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a></nav></header>
+  <header className="siteHeader"><Link className="wordmark" href="/">Rafaela Arantes</Link><nav><Link href="/">Início</Link><Link href="/projetos">Projetos</Link><Link href="/depoimentos">Depoimentos</Link><a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a><Link className="languageSwitch" href="/en/education">EN</Link></nav></header>
 
   <section className="pageHero educationHero"><p className="eyebrow">Formação & credenciais</p><h1>Repertório que conecta comportamento, estratégia e criação.</h1><p>Minha formação combina Psicologia e Marketing Digital, complementada por estudos em marca, negócios, experiência do cliente e comunicação.</p></section>
 

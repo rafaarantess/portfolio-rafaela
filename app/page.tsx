@@ -16,6 +16,7 @@ function Header() {
       <Link href="/formacao">Formação</Link>
       <Link href="/depoimentos">Depoimentos</Link>
       <a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a>
+      <Link className="languageSwitch" href="/en" aria-label="View site in English">EN</Link>
     </nav>
   </header>;
 }
