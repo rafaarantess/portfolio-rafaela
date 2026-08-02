@@ -71,12 +71,12 @@ export const projects: Project[] = [
     testimonial:{quote:"Super recomendo. Muito pontual. Amei o trabalho executado pela Rafaela.",name:"Narayane"}
   },
   {
-    slug:"conteudo-educativo", title:"Conteúdo educativo", category:"Social media", year:"2025",
-    summary:"Carrosséis que tornam informação especializada mais simples, visual e próxima.",
-    challenge:"Organizar temas educativos em uma sequência leve, mantendo clareza e ritmo de leitura para redes sociais.",
-    role:"Design dos posts, hierarquia de conteúdo e adaptação para carrossel.",
-    deliverables:["Direção visual","Cards educativos","Carrosséis para Instagram"], cover:"/cases/conteudo-educativo/post-1.png",
-    images:["/cases/conteudo-educativo/post-1.png","/cases/conteudo-educativo/post-2.png","/cases/conteudo-educativo/post-3.png"]
+    slug:"street-academia", title:"Street Academia", category:"Design promocional", year:"2025",
+    summary:"Uma tabela de planos que organiza preços, condições e benefícios com leitura direta.",
+    challenge:"Apresentar diferentes planos, taxas, horários e serviços em uma única peça promocional sem perder clareza nem impacto visual.",
+    role:"Organização da informação, hierarquia visual, composição e design da tabela de preços.",
+    deliverables:["Tabela de preços","Hierarquia de planos","Peça promocional"], cover:"/projects/street-academia.png",
+    images:["/projects/street-academia.png"]
   },
 ];
 
