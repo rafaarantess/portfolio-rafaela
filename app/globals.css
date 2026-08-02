@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root{--ink:#191917;--paper:#f7f6f2;--muted:#6e6d67;--line:#d8d6ce;--soft:#eceae3;--accent:#9b4d4d}
+:root{--ink:#191716;--paper:#f8f6f2;--muted:#6e6966;--line:#d8d3ce;--soft:#eee9e5;--accent:#711f32;--accent-soft:#eadadd}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
@@ -14,13 +14,13 @@ img{display:block;max-width:100%}
 .heroClean,.section,.contactClean,.pageHero,.allTestimonials{max-width:1280px;margin:auto;padding-left:32px;padding-right:32px}
 .heroClean{padding-top:100px;padding-bottom:110px}
 .eyebrow{margin:0 0 26px;font-size:.69rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700}
-.heroClean h1{max-width:1000px;margin:0;font-size:clamp(3.4rem,7vw,6.8rem);line-height:.96;letter-spacing:-.065em;font-weight:500}
+.heroClean h1{max-width:920px;margin:0;font-size:clamp(3rem,5.7vw,5.5rem);line-height:1;letter-spacing:-.06em;font-weight:500}
 .heroIntro{margin-top:56px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:40px}
 .heroIntro p{max-width:530px;margin:0;color:var(--muted);font-size:1.08rem;line-height:1.65}
-.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--ink);color:white;border:1px solid var(--ink);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--accent);color:white;border:1px solid var(--accent);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
 .section{padding-top:110px;padding-bottom:110px;border-top:1px solid var(--line)}
 .sectionHeading{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin-bottom:60px}
-.sectionHeading h2,.aboutClean h2,.contactClean h2,.pageHero h1{margin:0;font-size:clamp(2.35rem,4.6vw,4.6rem);line-height:1.02;letter-spacing:-.055em;font-weight:500}
+.sectionHeading h2,.aboutClean h2,.contactClean h2,.pageHero h1{margin:0;font-size:clamp(2.15rem,3.7vw,3.7rem);line-height:1.06;letter-spacing:-.05em;font-weight:500}
 .projectGrid{display:grid;grid-template-columns:1fr 1fr;gap:64px 24px}
 .projectVisual{height:440px;background:var(--soft);overflow:hidden}
 .projectVisual{position:relative}
@@ -31,9 +31,9 @@ img{display:block;max-width:100%}
 .projectCard:hover .viewProject{opacity:1;transform:none}
 .projectInfo{padding-top:20px;border-top:1px solid var(--ink)}
 .projectInfo>span{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.projectInfo h3{font-size:1.7rem;letter-spacing:-.035em;margin:18px 0 8px}
+.projectInfo h3{font-size:1.45rem;letter-spacing:-.03em;margin:16px 0 8px}
 .projectInfo p{max-width:470px;margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}
-.servicesClean{background:#f0eee8}
+.servicesClean{background:var(--accent-soft)}
 .simpleRows{border-top:1px solid var(--ink)}
 .simpleRows article{display:grid;grid-template-columns:80px 1fr 1fr;gap:24px;align-items:start;padding:28px 0;border-bottom:1px solid var(--line)}
 .simpleRows span{font-size:.7rem;color:var(--accent)}
@@ -84,17 +84,17 @@ img{display:block;max-width:100%}
 .archiveCard:hover img{transform:scale(1.015)}
 .archiveInfo{padding-top:18px;border-top:1px solid var(--ink);position:relative}
 .archiveInfo>span,.archiveInfo small{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-.archiveInfo h2{font-size:2rem;letter-spacing:-.04em;margin:18px 0 8px;font-weight:500}
+.archiveInfo h2{font-size:1.6rem;letter-spacing:-.035em;margin:16px 0 8px;font-weight:500}
 .archiveInfo p{max-width:500px;margin:0;color:var(--muted);line-height:1.6}
 .archiveInfo small{position:absolute;right:0;top:18px}
 .caseHero{max-width:1280px;margin:auto;padding:90px 32px 80px;display:grid;grid-template-columns:1.4fr .6fr;align-items:end;gap:70px}
-.caseHero h1{margin:0;font-size:clamp(4rem,8vw,8rem);line-height:.88;letter-spacing:-.07em;font-weight:500}
+.caseHero h1{margin:0;font-size:clamp(3.5rem,6vw,6rem);line-height:.94;letter-spacing:-.065em;font-weight:500}
 .caseHero>p{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.7}
 .caseCover{max-width:1280px;height:min(72vw,760px);margin:auto;background:var(--soft);overflow:hidden}
 .caseCover img,.caseCover iframe{width:100%;height:100%;object-fit:cover;border:0}
 .caseCover iframe{background:white}
 .caseOverview{max-width:1280px;margin:auto;padding:110px 32px;display:grid;grid-template-columns:1fr 1.25fr .75fr;gap:65px;border-bottom:1px solid var(--line)}
-.caseOverview h2,.documentShowcase h2{font-size:clamp(2.2rem,4vw,4rem);line-height:1.03;letter-spacing:-.05em;font-weight:500;margin:0}
+.caseOverview h2,.documentShowcase h2{font-size:clamp(2rem,3.3vw,3.3rem);line-height:1.06;letter-spacing:-.045em;font-weight:500;margin:0}
 .caseText h3,.deliverables h3{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 12px}
 .caseText p{color:var(--muted);line-height:1.75;margin:0 0 34px}
 .deliverables{display:flex;flex-direction:column}
@@ -110,12 +110,12 @@ img{display:block;max-width:100%}
 .singleGallery a{min-height:auto}
 .singleGallery img{height:auto;max-height:none}
 .caseGallery span{position:absolute;right:16px;bottom:16px;background:var(--paper);padding:10px 13px;font-size:.67rem;text-transform:uppercase;letter-spacing:.1em}
-.caseQuote{max-width:1280px;margin:auto;padding:110px 8%;background:var(--ink);color:white}
-.caseQuote blockquote{font-size:clamp(2rem,4.2vw,4.2rem);line-height:1.15;letter-spacing:-.045em;margin:35px 0}
+.caseQuote{max-width:1280px;margin:auto;padding:110px 8%;background:var(--accent);color:white}
+.caseQuote blockquote{font-size:clamp(1.8rem,3.5vw,3.5rem);line-height:1.2;letter-spacing:-.04em;margin:35px 0}
 .caseQuote>span{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;color:#aaa}
 .nextProject{max-width:1280px;margin:auto;padding:70px 32px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line)}
 .nextProject span{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.nextProject strong{font-size:clamp(2rem,4vw,4rem);font-weight:500;letter-spacing:-.05em}
+.nextProject strong{font-size:clamp(1.8rem,3.2vw,3.2rem);font-weight:500;letter-spacing:-.045em}
 .educationSection,.credentialsSection{max-width:1280px;margin:auto;padding:90px 32px;border-top:1px solid var(--line)}
 .educationSection>header,.credentialsSection>header{display:flex;justify-content:space-between;align-items:start;margin-bottom:48px}
 .educationSection>header>span,.credentialsSection>header>span{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
@@ -138,7 +138,7 @@ img{display:block;max-width:100%}
   .siteHeader nav{gap:13px;flex-wrap:wrap;justify-content:flex-end;max-width:240px;font-size:.68rem}
   .heroClean,.section,.contactClean,.pageHero,.allTestimonials{padding-left:20px;padding-right:20px}
   .heroClean{padding-top:72px;padding-bottom:80px}
-  .heroClean h1{font-size:3.2rem}
+  .heroClean h1{font-size:2.85rem}
   .heroIntro,.sectionHeading,.testimonialHeading,.aboutClean{grid-template-columns:1fr;gap:28px}
   .section{padding-top:78px;padding-bottom:78px}
   .sectionHeading{margin-bottom:40px}
@@ -161,7 +161,7 @@ img{display:block;max-width:100%}
   .archiveImage,.archiveCard:nth-child(3n) .archiveImage{height:360px}
   .archiveInfo{margin-top:16px}
   .caseHero{padding:70px 20px 55px;grid-template-columns:1fr;gap:30px}
-  .caseHero h1{font-size:3.7rem}
+  .caseHero h1{font-size:3.1rem}
   .caseCover{height:70vw;min-height:360px}
   .caseOverview{padding:78px 20px;grid-template-columns:1fr;gap:40px}
   .documentShowcase{padding:78px 20px;grid-template-columns:1fr}

@@ -13,7 +13,7 @@ const education = [
 
 const credentials = [
   { title:"Marketing e vendas B2B: Fechando novos negócios", institution:"Universidade de São Paulo", date:"Março de 2025", logo:"/credentials/logos/usp.jpg", url:"/credentials/docs/usp-b2b.jpg" },
-  { title:"EF SET English Certificate — C2 Proficient", institution:"EF SET", date:"Março de 2025", logo:"/credentials/logos/efset.jpg" },
+  { title:"English Certificate — C2 Proficient", institution:"EF SET", date:"Março de 2025", logo:"/credentials/logos/efset.jpg", url:"https://cert.efset.org/en/zPUoB1" },
   { title:"Foundations of Digital Marketing and E-commerce", institution:"Google", date:"Março de 2023", logo:"/credentials/logos/google.jpg", url:"/credentials/docs/google-marketing.jpg" },
   { title:"Branding Avançado: analisando a eficiência da sua marca", institution:"Conquer", date:"Agosto de 2023", logo:"/credentials/logos/conquer.jpg", url:"/credentials/docs/conquer-branding.jpg" },
   { title:"Customer Experience (CX)", institution:"Conquer", date:"Agosto de 2023", logo:"/credentials/logos/conquer.jpg", url:"/credentials/docs/conquer-cx.jpg" },
