@@ -27,7 +27,7 @@ export default function TestimonialsPage() {
   return <main>
     <header className="siteHeader">
       <Link className="wordmark" href="/">Rafaela Arantes</Link>
-      <nav aria-label="Navegação principal"><Link href="/">Início</Link><Link href="/#projetos">Projetos</Link><Link href="/#sobre">Sobre</Link><a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a><Link className="languageSwitch" href="/en/testimonials">EN</Link></nav>
+      <nav aria-label="Navegação principal"><Link href="/">Início</Link><Link href="/#projetos">Projetos</Link><Link href="/formacao">Formação</Link><Link href="/#sobre">Sobre</Link><a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a><Link className="languageSwitch" href="/en/testimonials">EN</Link></nav>
     </header>
     <section className="pageHero">
       <p className="eyebrow">Depoimentos de clientes</p>

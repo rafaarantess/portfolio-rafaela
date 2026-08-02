@@ -78,6 +78,14 @@ export const projects: Project[] = [
     deliverables:["Tabela de preços","Hierarquia de planos","Peça promocional"], cover:"/projects/street-academia.png",
     images:["/projects/street-academia.png"]
   },
+  {
+    slug:"doctomatic", title:"Doctomatic", category:"Social media", year:"2023",
+    summary:"Conteúdo visual em espanhol para apresentar uma plataforma de monitoramento remoto de pacientes.",
+    challenge:"Traduzir funcionalidades de tecnologia em saúde em peças claras, acessíveis e coerentes com a identidade visual da marca.",
+    role:"Design das peças, composição visual e organização do conteúdo para redes sociais.",
+    deliverables:["Posts institucionais","Conteúdo informativo","Peça sazonal","Apresentação de funcionalidades"], cover:"/projects/doctomatic.png",
+    images:["/projects/doctomatic.png"]
+  },
 ];
 
 export const getProject = (slug: string) => projects.find(project => project.slug === slug);
