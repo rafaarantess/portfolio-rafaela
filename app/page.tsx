@@ -28,7 +28,7 @@ export default function Home() {
       <p className="eyebrow">Estratégia de marca · design · conteúdo</p>
       <h1>Transformo ideias em marcas claras, relevantes e memoráveis.</h1>
       <div className="heroIntro">
-        <p>Uno estratégia, identidade e comunicação digital com um olhar informado pela Psicologia.</p>
+        <p>Estratégia, design e conteúdo para marcas que querem comunicar com clareza e personalidade.</p>
         <a className="button" href="#projetos">Conheça meu trabalho</a>
       </div>
     </section>
@@ -40,7 +40,7 @@ export default function Home() {
       </div>
       <div className="projectGrid">
         {projects.filter(project=>project.featured).map((project, index) => <Link className="projectCard" href={`/projetos/${project.slug}`} key={project.title}>
-          <div className="projectVisual">{project.coverKind==="pdf"?<iframe src={`${project.cover}#page=1&view=FitH&toolbar=0`} title={`Prévia do projeto ${project.title}`} tabIndex={-1}/>:<img src={project.cover} alt={`Projeto ${project.title}`}/>}<span className="viewProject">Ver case ↗</span></div>
+          <div className="projectVisual">{project.coverKind==="pdf"?<iframe src={`${project.cover}#page=1&view=Fit&zoom=page-fit&toolbar=0`} title={`Prévia do projeto ${project.title}`} tabIndex={-1}/>:<img src={project.cover} alt={`Projeto ${project.title}`}/>}<span className="viewProject">Ver case ↗</span></div>
           <div className="projectInfo">
             <span>{String(index + 1).padStart(2, "0")} · {project.category}</span>
             <h3>{project.title}</h3>

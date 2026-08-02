@@ -7,10 +7,10 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helveti
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 .siteHeader{max-width:1280px;margin:auto;height:84px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-.wordmark{font-size:1rem;font-weight:700;letter-spacing:-.02em}
+.wordmark{font-size:1rem;font-weight:700;letter-spacing:-.02em;color:var(--accent)}
 .siteHeader nav{display:flex;gap:28px;font-size:.78rem}
 .siteHeader nav a{color:var(--muted)}
-.siteHeader nav a:hover{color:var(--ink)}
+.siteHeader nav a:hover{color:var(--accent)}
 .heroClean,.section,.contactClean,.pageHero,.allTestimonials{max-width:1280px;margin:auto;padding-left:32px;padding-right:32px}
 .heroClean{padding-top:100px;padding-bottom:110px}
 .eyebrow{margin:0 0 26px;font-size:.69rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700}
@@ -31,18 +31,18 @@ img{display:block;max-width:100%}
 .projectCard:hover .viewProject{opacity:1;transform:none}
 .projectInfo{padding-top:20px;border-top:1px solid var(--ink)}
 .projectInfo>span{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.projectInfo h3{font-size:1.45rem;letter-spacing:-.03em;margin:16px 0 8px}
+.projectInfo h3{font-size:1.45rem;letter-spacing:-.03em;margin:16px 0 8px;color:var(--accent)}
 .projectInfo p{max-width:470px;margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}
 .servicesClean{background:var(--accent-soft)}
 .simpleRows{border-top:1px solid var(--ink)}
 .simpleRows article{display:grid;grid-template-columns:80px 1fr 1fr;gap:24px;align-items:start;padding:28px 0;border-bottom:1px solid var(--line)}
 .simpleRows span{font-size:.7rem;color:var(--accent)}
-.simpleRows h3{margin:0;font-size:1.45rem;font-weight:500}
+.simpleRows h3{margin:0;font-size:1.45rem;font-weight:500;color:var(--accent)}
 .simpleRows p{margin:0;color:var(--muted);line-height:1.6}
 .aboutClean{display:grid;grid-template-columns:1.15fr .85fr;gap:100px}
 .bodyCopy{padding-top:39px}
 .bodyCopy p{margin:0 0 22px;color:var(--muted);font-size:1rem;line-height:1.75}
-.textLink{display:inline-block;margin-top:12px;padding-bottom:5px;border-bottom:1px solid;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+.textLink{display:inline-block;margin-top:12px;padding-bottom:5px;border-bottom:1px solid;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 .aboutLinks{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
 .sectionAction{margin-top:48px;display:flex;justify-content:flex-end}
 .testimonialPreview{background:var(--ink);color:white}
@@ -57,7 +57,7 @@ img{display:block;max-width:100%}
 .buttonLight{background:white;border-color:white;color:var(--ink)}
 .contactClean{padding-top:110px;padding-bottom:110px}
 .contactClean h2{max-width:850px;margin-bottom:50px}
-.contactClean>a{display:inline-block;border-bottom:1px solid;padding-bottom:6px;font-size:1rem}
+.contactClean>a{display:inline-block;border-bottom:1px solid;padding-bottom:6px;font-size:1rem;color:var(--accent)}
 .siteFooter{max-width:1280px;margin:auto;padding:28px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em}
 .pageHero{padding-top:100px;padding-bottom:90px}
 .pageHero h1{max-width:1000px}
@@ -75,16 +75,16 @@ img{display:block;max-width:100%}
 .compactContact{border-top:1px solid var(--line)}
 .compactContact h2{font-size:clamp(2.4rem,4vw,4rem)}
 .projectsArchive{max-width:1280px;margin:auto;padding:0 32px 110px;display:grid;grid-template-columns:1fr 1fr;gap:70px 24px}
-.archiveCard:nth-child(3n){grid-column:span 2;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:end}
+.archiveCard:nth-child(3n){grid-column:auto;display:block}
 .archiveImage{height:430px;background:var(--soft);overflow:hidden;position:relative}
-.archiveCard:nth-child(3n) .archiveImage{height:570px}
+.archiveCard:nth-child(3n) .archiveImage{height:430px}
 .archiveImage img,.archiveImage iframe{width:100%;height:100%;object-fit:cover;border:0;transition:.4s}
 .archiveImage iframe{pointer-events:none;background:white}
 .archiveImage>span{position:absolute;right:18px;bottom:18px;background:var(--paper);padding:11px 14px;font-size:.67rem;text-transform:uppercase;letter-spacing:.1em}
 .archiveCard:hover img{transform:scale(1.015)}
 .archiveInfo{padding-top:18px;border-top:1px solid var(--ink);position:relative}
 .archiveInfo>span,.archiveInfo small{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-.archiveInfo h2{font-size:1.6rem;letter-spacing:-.035em;margin:16px 0 8px;font-weight:500}
+.archiveInfo h2{font-size:1.6rem;letter-spacing:-.035em;margin:16px 0 8px;font-weight:500;color:var(--accent)}
 .archiveInfo p{max-width:500px;margin:0;color:var(--muted);line-height:1.6}
 .archiveInfo small{position:absolute;right:0;top:18px}
 .caseHero{max-width:1280px;margin:auto;padding:90px 32px 80px;display:grid;grid-template-columns:1.4fr .6fr;align-items:end;gap:70px}
@@ -127,7 +127,7 @@ img{display:block;max-width:100%}
 .educationGrid span{font-size:.75rem;color:var(--muted)}
 .credentialRows{border-top:1px solid var(--line)}
 .credentialRows article{min-height:155px;display:grid;grid-template-columns:70px 1fr auto;gap:30px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
-.credentialCopy h2{font-size:1.18rem;font-weight:600;letter-spacing:-.02em;margin:0 0 6px}
+.credentialCopy h2{font-size:1.18rem;font-weight:600;letter-spacing:-.02em;margin:0 0 6px;color:var(--accent)}
 .credentialCopy p{margin:0 0 6px;color:var(--muted);font-size:.9rem}
 .credentialCopy span{font-size:.78rem;color:var(--muted)}
 .credentialRows article>a{border:1px solid var(--ink);border-radius:99px;padding:10px 15px;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;transition:.2s}
