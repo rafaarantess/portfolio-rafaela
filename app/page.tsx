@@ -13,6 +13,7 @@ function Header() {
     <nav aria-label="Navegação principal">
       <Link href="/projetos">Projetos</Link>
       <a href="#sobre">Sobre</a>
+      <Link href="/formacao">Formação</Link>
       <Link href="/depoimentos">Depoimentos</Link>
       <a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a>
     </nav>
@@ -39,7 +40,7 @@ export default function Home() {
       </div>
       <div className="projectGrid">
         {projects.filter(project=>project.featured).map((project, index) => <Link className="projectCard" href={`/projetos/${project.slug}`} key={project.title}>
-          <div className="projectVisual"><img src={project.cover} alt={`Projeto ${project.title}`}/><span className="viewProject">Ver case ↗</span></div>
+          <div className="projectVisual">{project.coverKind==="pdf"?<iframe src={`${project.cover}#page=1&view=FitH&toolbar=0`} title={`Prévia do projeto ${project.title}`} tabIndex={-1}/>:<img src={project.cover} alt={`Projeto ${project.title}`}/>}<span className="viewProject">Ver case ↗</span></div>
           <div className="projectInfo">
             <span>{String(index + 1).padStart(2, "0")} · {project.category}</span>
             <h3>{project.title}</h3>
@@ -48,11 +49,6 @@ export default function Home() {
         </Link>)}
       </div>
       <div className="sectionAction"><Link className="button" href="/projetos">Ver todos os 7 projetos</Link></div>
-    </section>
-
-    <section className="section credentials">
-      <div className="sectionHeading"><p className="eyebrow">Formação contínua</p><h2>Estratégia sustentada por repertório.</h2></div>
-      <div className="credentialList"><span>Marketing Digital · USP</span><span>Branding Avançado · Conquer</span><span>Customer Experience · Conquer</span><span>Marketing & E-commerce · Google</span></div>
     </section>
 
     <section className="section servicesClean">
@@ -75,7 +71,7 @@ export default function Home() {
       <div className="bodyCopy">
         <p>Sou Rafaela Arantes, profissional de marca e presença digital. Minha formação em Marketing Digital e Psicologia me ajuda a enxergar marcas como sistemas de percepção, comunicação e experiência — não apenas como estética.</p>
         <p>Desde 2022, atuo entre projetos independentes e ambientes institucionais, conectando design, conteúdo e estratégia em português e inglês.</p>
-        <a className="textLink" href="https://linkedin.com/in/rafaelaamelo">Ver trajetória no LinkedIn ↗</a>
+        <div className="aboutLinks"><Link className="textLink" href="/formacao">Ver formação & credenciais ↗</Link><a className="textLink" href="https://linkedin.com/in/rafaelaamelo">Ver trajetória no LinkedIn ↗</a></div>
       </div>
     </section>
 

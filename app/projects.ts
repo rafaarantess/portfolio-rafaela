@@ -8,6 +8,7 @@ export type Project = {
   role: string;
   deliverables: string[];
   cover: string;
+  coverKind?: "image" | "pdf";
   images?: string[];
   documents?: { label: string; url: string }[];
   testimonial?: { quote: string; name: string };
@@ -40,7 +41,7 @@ export const projects: Project[] = [
     summary:"Uma identidade acessível e coerente para uma iniciativa ligada à educação.",
     challenge:"Criar uma linguagem visual acolhedora, reconhecível e simples de aplicar em diferentes pontos de contato.",
     role:"Conceito, identidade visual, paleta, tipografia e aplicações.",
-    deliverables:["Logo e variações","Paleta cromática","Tipografia","Aplicações da marca"], cover:"/projects/micaela.png",
+    deliverables:["Logo e variações","Paleta cromática","Tipografia","Aplicações da marca"], cover:"/cases/ensinar-transforma/identidade.pdf", coverKind:"pdf",
     documents:[{label:"Ver apresentação da identidade",url:"/cases/ensinar-transforma/identidade.pdf"}],
     testimonial:{quote:"Profissional excelente! Me atendeu de forma rápida, tirou minhas dúvidas e executou o projeto como eu gostaria.",name:"Camila Costa"}
   },

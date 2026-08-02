@@ -24,7 +24,8 @@ img{display:block;max-width:100%}
 .projectGrid{display:grid;grid-template-columns:1fr 1fr;gap:64px 24px}
 .projectVisual{height:440px;background:var(--soft);overflow:hidden}
 .projectVisual{position:relative}
-.projectVisual img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.projectVisual img,.projectVisual iframe{width:100%;height:100%;object-fit:cover;border:0;transition:transform .4s ease}
+.projectVisual iframe{pointer-events:none;background:white}
 .projectCard:hover img{transform:scale(1.015)}
 .viewProject{position:absolute;right:18px;bottom:18px;background:rgba(247,246,242,.94);padding:11px 14px;font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;opacity:0;transform:translateY(6px);transition:.25s}
 .projectCard:hover .viewProject{opacity:1;transform:none}
@@ -42,10 +43,8 @@ img{display:block;max-width:100%}
 .bodyCopy{padding-top:39px}
 .bodyCopy p{margin:0 0 22px;color:var(--muted);font-size:1rem;line-height:1.75}
 .textLink{display:inline-block;margin-top:12px;padding-bottom:5px;border-bottom:1px solid;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+.aboutLinks{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
 .sectionAction{margin-top:48px;display:flex;justify-content:flex-end}
-.credentials{padding-top:78px;padding-bottom:78px}
-.credentialList{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.credentialList span{padding:28px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.82rem;line-height:1.45}
 .testimonialPreview{background:var(--ink);color:white}
 .testimonialHeading{grid-template-columns:1fr 2fr 1fr}
 .testimonialHeading>p:last-child{color:#aaa;line-height:1.6}
@@ -79,7 +78,8 @@ img{display:block;max-width:100%}
 .archiveCard:nth-child(3n){grid-column:span 2;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:end}
 .archiveImage{height:430px;background:var(--soft);overflow:hidden;position:relative}
 .archiveCard:nth-child(3n) .archiveImage{height:570px}
-.archiveImage img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.archiveImage img,.archiveImage iframe{width:100%;height:100%;object-fit:cover;border:0;transition:.4s}
+.archiveImage iframe{pointer-events:none;background:white}
 .archiveImage>span{position:absolute;right:18px;bottom:18px;background:var(--paper);padding:11px 14px;font-size:.67rem;text-transform:uppercase;letter-spacing:.1em}
 .archiveCard:hover img{transform:scale(1.015)}
 .archiveInfo{padding-top:18px;border-top:1px solid var(--ink);position:relative}
@@ -91,7 +91,8 @@ img{display:block;max-width:100%}
 .caseHero h1{margin:0;font-size:clamp(4rem,8vw,8rem);line-height:.88;letter-spacing:-.07em;font-weight:500}
 .caseHero>p{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.7}
 .caseCover{max-width:1280px;height:min(72vw,760px);margin:auto;background:var(--soft);overflow:hidden}
-.caseCover img{width:100%;height:100%;object-fit:cover}
+.caseCover img,.caseCover iframe{width:100%;height:100%;object-fit:cover;border:0}
+.caseCover iframe{background:white}
 .caseOverview{max-width:1280px;margin:auto;padding:110px 32px;display:grid;grid-template-columns:1fr 1.25fr .75fr;gap:65px;border-bottom:1px solid var(--line)}
 .caseOverview h2,.documentShowcase h2{font-size:clamp(2.2rem,4vw,4rem);line-height:1.03;letter-spacing:-.05em;font-weight:500;margin:0}
 .caseText h3,.deliverables h3{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 12px}
@@ -115,6 +116,23 @@ img{display:block;max-width:100%}
 .nextProject{max-width:1280px;margin:auto;padding:70px 32px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line)}
 .nextProject span{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
 .nextProject strong{font-size:clamp(2rem,4vw,4rem);font-weight:500;letter-spacing:-.05em}
+.educationSection,.credentialsSection{max-width:1280px;margin:auto;padding:90px 32px;border-top:1px solid var(--line)}
+.educationSection>header,.credentialsSection>header{display:flex;justify-content:space-between;align-items:start;margin-bottom:48px}
+.educationSection>header>span,.credentialsSection>header>span{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.educationGrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.educationGrid article{min-height:220px;padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:72px 1fr;gap:25px;align-items:start}
+.educationGrid img,.credentialRows article>img{width:64px;height:64px;object-fit:cover;border:1px solid var(--line);background:white}
+.educationGrid h2{font-size:1.5rem;font-weight:500;letter-spacing:-.03em;margin:2px 0 9px}
+.educationGrid p{margin:0 0 9px;color:var(--muted)}
+.educationGrid span{font-size:.75rem;color:var(--muted)}
+.credentialRows{border-top:1px solid var(--line)}
+.credentialRows article{min-height:155px;display:grid;grid-template-columns:70px 1fr auto;gap:30px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.credentialCopy h2{font-size:1.18rem;font-weight:600;letter-spacing:-.02em;margin:0 0 6px}
+.credentialCopy p{margin:0 0 6px;color:var(--muted);font-size:.9rem}
+.credentialCopy span{font-size:.78rem;color:var(--muted)}
+.credentialRows article>a{border:1px solid var(--ink);border-radius:99px;padding:10px 15px;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;transition:.2s}
+.credentialRows article>a:hover{background:var(--ink);color:white}
+.credentialStatus{font-size:.7rem;color:var(--muted);font-style:italic}
 @media(max-width:800px){
   .siteHeader{height:auto;min-height:76px;padding:20px;align-items:flex-start}
   .siteHeader nav{gap:13px;flex-wrap:wrap;justify-content:flex-end;max-width:240px;font-size:.68rem}
@@ -138,7 +156,6 @@ img{display:block;max-width:100%}
   .pageHero{padding-top:70px;padding-bottom:65px}
   .allTestimonials article{grid-template-columns:36px 1fr;gap:12px;padding:34px 0}
   .testimonialPerson{flex-direction:column;align-items:flex-start}
-  .credentialList{grid-template-columns:1fr 1fr}
   .projectsArchive{padding:0 20px 78px;grid-template-columns:1fr;gap:48px}
   .archiveCard:nth-child(3n){grid-column:auto;display:block}
   .archiveImage,.archiveCard:nth-child(3n) .archiveImage{height:360px}
@@ -153,5 +170,11 @@ img{display:block;max-width:100%}
   .caseGallery a,.caseGallery a:first-child:nth-last-child(3){grid-column:auto;min-height:360px}
   .singleGallery a{min-height:auto}
   .nextProject{padding:55px 20px;flex-direction:column;align-items:flex-start;gap:22px}
+  .educationSection,.credentialsSection{padding:70px 20px}
+  .educationGrid{grid-template-columns:1fr}
+  .credentialRows article{grid-template-columns:58px 1fr;gap:18px}
+  .credentialRows article>a,.credentialStatus{grid-column:2;justify-self:start}
+  .educationGrid article{grid-template-columns:58px 1fr;padding:24px 20px}
+  .educationGrid img,.credentialRows article>img{width:52px;height:52px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.projectVisual img{transition:none}}
