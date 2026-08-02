@@ -72,6 +72,7 @@ export default function Home() {
       <div className="bodyCopy">
         <p>Sou Rafaela Arantes, profissional de marca e presença digital. Minha formação em Marketing Digital e Psicologia me ajuda a enxergar marcas como sistemas de percepção, comunicação e experiência — não apenas como estética.</p>
         <p>Desde 2022, atuo entre projetos independentes e ambientes institucionais, conectando design, conteúdo e estratégia em português e inglês.</p>
+        <p>Também atuo como psicóloga clínica, com registro CRP 05/85694 e presença profissional na Doctoralia.</p>
         <div className="aboutLinks"><Link className="textLink" href="/formacao">Ver formação & credenciais ↗</Link><a className="textLink" href="https://linkedin.com/in/rafaelaamelo">Ver trajetória no LinkedIn ↗</a></div>
       </div>
     </section>
