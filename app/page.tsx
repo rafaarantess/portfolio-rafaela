@@ -1,11 +1,5 @@
 import Link from "next/link";
-
-const projects = [
-  { title:"Canacaju", tag:"Design editorial", text:"Direção visual e diagramação de catálogos para três coleções de moda praia.", image:"/projects/canacaju.png" },
-  { title:"Aiurotrek", tag:"Comunicação de marca", text:"Um folder de expedição que transforma informação complexa em uma experiência clara.", image:"/projects/aiurotrek.png" },
-  { title:"Micaela Castaldi", tag:"Identidade visual", text:"Um sistema de marca sensível e expressivo para uma profissional de Psicologia.", image:"/projects/micaela.png" },
-  { title:"Narayane Martins", tag:"Design de proposta", text:"Apresentação comercial com linguagem visual coerente, elegante e direta.", image:"/projects/narayane.png" },
-];
+import { projects } from "./projects";
 
 const previewTestimonials = [
   { quote:"Muito competente, responsável e dedicada. Trabalho perfeito. Recomendo muito.", name:"Leticia", project:"Canacaju" },
@@ -17,7 +11,7 @@ function Header() {
   return <header className="siteHeader">
     <Link className="wordmark" href="/">Rafaela Arantes</Link>
     <nav aria-label="Navegação principal">
-      <a href="#projetos">Projetos</a>
+      <Link href="/projetos">Projetos</Link>
       <a href="#sobre">Sobre</a>
       <Link href="/depoimentos">Depoimentos</Link>
       <a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a>
@@ -44,15 +38,21 @@ export default function Home() {
         <h2>Trabalho com intenção, da estratégia à entrega.</h2>
       </div>
       <div className="projectGrid">
-        {projects.map((project, index) => <article className="projectCard" key={project.title}>
-          <div className="projectVisual"><img src={project.image} alt={`Projeto ${project.title}`}/></div>
+        {projects.filter(project=>project.featured).map((project, index) => <Link className="projectCard" href={`/projetos/${project.slug}`} key={project.title}>
+          <div className="projectVisual"><img src={project.cover} alt={`Projeto ${project.title}`}/><span className="viewProject">Ver case ↗</span></div>
           <div className="projectInfo">
-            <span>{String(index + 1).padStart(2, "0")} · {project.tag}</span>
+            <span>{String(index + 1).padStart(2, "0")} · {project.category}</span>
             <h3>{project.title}</h3>
-            <p>{project.text}</p>
+            <p>{project.summary}</p>
           </div>
-        </article>)}
+        </Link>)}
       </div>
+      <div className="sectionAction"><Link className="button" href="/projetos">Ver todos os 7 projetos</Link></div>
+    </section>
+
+    <section className="section credentials">
+      <div className="sectionHeading"><p className="eyebrow">Formação contínua</p><h2>Estratégia sustentada por repertório.</h2></div>
+      <div className="credentialList"><span>Marketing Digital · USP</span><span>Branding Avançado · Conquer</span><span>Customer Experience · Conquer</span><span>Marketing & E-commerce · Google</span></div>
     </section>
 
     <section className="section servicesClean">
