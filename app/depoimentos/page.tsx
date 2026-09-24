@@ -27,7 +27,7 @@ export default function TestimonialsPage() {
   return <main>
     <header className="siteHeader">
       <Link className="wordmark" href="/">Rafaela Arantes</Link>
-      <nav aria-label="Navegação principal"><Link href="/">Início</Link><Link href="/#projetos">Projetos</Link><Link href="/formacao">Formação</Link><Link href="/#sobre">Sobre</Link><a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a><Link className="languageSwitch" href="/en/testimonials">EN</Link></nav>
+      <nav aria-label="Navegação principal"><Link href="/">Início</Link><Link href="/#projetos">Projetos</Link><Link href="/formacao">Formação</Link><Link href="/#sobre">Sobre</Link><a href="mailto:rafaaranteswork@gmail.com">Contato</a><Link className="languageSwitch" href="/en/testimonials">EN</Link></nav>
     </header>
     <section className="pageHero">
       <p className="eyebrow">Depoimentos de clientes</p>
@@ -44,7 +44,7 @@ export default function TestimonialsPage() {
         </div>
       </article>)}
     </section>
-    <section className="contactClean compactContact"><p className="eyebrow">Seu projeto pode ser o próximo</p><h2>Vamos trabalhar juntos?</h2><a href="mailto:rafaela.arantes.rj@gmail.com">Entrar em contato ↗</a></section>
+    <section className="contactClean compactContact"><p className="eyebrow">Seu projeto pode ser o próximo</p><h2>Vamos trabalhar juntos?</h2><a href="mailto:rafaaranteswork@gmail.com">Entrar em contato ↗</a></section>
     <footer className="siteFooter"><span>Rafaela Arantes © 2026</span><Link href="/">Voltar ao início ↑</Link></footer>
   </main>;
 }

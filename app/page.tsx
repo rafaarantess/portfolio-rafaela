@@ -15,7 +15,7 @@ function Header() {
       <a href="#sobre">Sobre</a>
       <Link href="/formacao">Formação</Link>
       <Link href="/depoimentos">Depoimentos</Link>
-      <a href="mailto:rafaela.arantes.rj@gmail.com">Contato</a>
+      <a href="mailto:rafaaranteswork@gmail.com">Contato</a>
       <Link className="languageSwitch" href="/en" aria-label="View site in English">EN</Link>
     </nav>
   </header>;
@@ -94,7 +94,7 @@ export default function Home() {
     <section className="contactClean">
       <p className="eyebrow">Vamos conversar</p>
       <h2>Tem uma ideia ou oportunidade em mente?</h2>
-      <a href="mailto:rafaela.arantes.rj@gmail.com">rafaela.arantes.rj@gmail.com ↗</a>
+      <a href="mailto:rafaaranteswork@gmail.com">rafaaranteswork@gmail.com ↗</a>
     </section>
 
     <footer className="siteFooter"><span>Rafaela Arantes © 2026</span><span>Marca · Design · Conteúdo</span></footer>

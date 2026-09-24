@@ -37,13 +37,12 @@ export const projects: Project[] = [
     testimonial:{quote:"Conseguiu traduzir exatamente minhas ideias. A forma que colocou as informações ficou clara e com a estética que eu buscava.",name:"Felipe Augusto · Aiurotrek"}
   },
   {
-    slug:"ensinar-transforma", title:"Ensinar Transforma", category:"Identidade visual", year:"2025", featured:true,
-    summary:"Uma identidade acessível e coerente para uma iniciativa ligada à educação.",
-    challenge:"Criar uma linguagem visual acolhedora, reconhecível e simples de aplicar em diferentes pontos de contato.",
-    role:"Conceito, identidade visual, paleta, tipografia e aplicações.",
-    deliverables:["Logo e variações","Paleta cromática","Tipografia","Aplicações da marca"], cover:"/cases/ensinar-transforma/identidade.pdf", coverKind:"pdf",
-    documents:[{label:"Ver apresentação da identidade",url:"/cases/ensinar-transforma/identidade.pdf"}],
-    testimonial:{quote:"Profissional excelente! Me atendeu de forma rápida, tirou minhas dúvidas e executou o projeto como eu gostaria.",name:"Camila Costa"}
+    slug:"pendulum", title:"Pendulum", category:"Campanha multiformato", year:"2025", featured:true,
+    summary:"Um sistema de banners adaptado para desktop, mobile e Instagram.",
+    challenge:"Manter a força da campanha e a leitura das ofertas em formatos com proporções e contextos diferentes.",
+    role:"Design das peças e adaptação responsiva da campanha. O site e a identidade da marca não fazem parte do escopo.",
+    deliverables:["Banner desktop","Banner mobile","Peça para Instagram"], cover:"/projects/pendulum-social.png",
+    images:["/projects/pendulum-social.png","/cases/pendulum/desktop.png","/cases/pendulum/mobile.png","/cases/pendulum/instagram.png"]
   },
   {
     slug:"micaela-castaldi", title:"Micaela Castaldi", category:"Identidade visual", year:"2026", featured:true,
@@ -52,14 +51,6 @@ export const projects: Project[] = [
     role:"Estratégia visual, criação de identidade, paleta, tipografia e elementos gráficos.",
     deliverables:["Logo principal","Variações de marca","Paleta e tipografia","Elementos gráficos"], cover:"/projects/micaela.png",
     images:["/cases/micaela/identidade.png"]
-  },
-  {
-    slug:"pendulum", title:"Pendulum", category:"Campanha multiformato", year:"2025",
-    summary:"Um sistema de banners adaptado para desktop, mobile e Instagram.",
-    challenge:"Manter a força da campanha e a leitura das ofertas em formatos com proporções e contextos diferentes.",
-    role:"Design das peças e adaptação responsiva da campanha. O site e a identidade da marca não fazem parte do escopo.",
-    deliverables:["Banner desktop","Banner mobile","Peça para Instagram"], cover:"/cases/pendulum/desktop.png",
-    images:["/cases/pendulum/desktop.png","/cases/pendulum/mobile.png","/cases/pendulum/instagram.png"]
   },
   {
     slug:"narayane-martins", title:"Narayane Martins", category:"Design de proposta", year:"2025",
@@ -85,6 +76,15 @@ export const projects: Project[] = [
     role:"Design das peças, composição visual e organização do conteúdo para redes sociais.",
     deliverables:["Posts institucionais","Conteúdo informativo","Peça sazonal","Apresentação de funcionalidades"], cover:"/projects/doctomatic.png",
     images:["/projects/doctomatic.png"]
+  },
+  {
+    slug:"ensinar-transforma", title:"Ensinar Transforma", category:"Identidade visual", year:"2025", featured:false,
+    summary:"Uma identidade acessível e coerente para uma iniciativa ligada à educação.",
+    challenge:"Criar uma linguagem visual acolhedora, reconhecível e simples de aplicar em diferentes pontos de contato.",
+    role:"Conceito, identidade visual, paleta, tipografia e aplicações.",
+    deliverables:["Logo e variações","Paleta cromática","Tipografia","Aplicações da marca"], cover:"/cases/ensinar-transforma/identidade.pdf", coverKind:"pdf",
+    documents:[{label:"Ver apresentação da identidade",url:"/cases/ensinar-transforma/identidade.pdf"}],
+    testimonial:{quote:"Profissional excelente! Me atendeu de forma rápida, tirou minhas dúvidas e executou o projeto como eu gostaria.",name:"Camila Costa"}
   },
 ];
 
