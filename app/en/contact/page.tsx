@@ -11,7 +11,7 @@ function EnvelopeIcon() {
 }
 
 function WhatsAppIcon() {
-  return <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M53 30a21 21 0 0 1-31 18L10 52l4-12A21 21 0 1 1 53 30Z"/><path d="M24 20c1-1 3-1 4 1l3 6c1 1 0 2-1 3l-2 2c3 6 7 9 13 12l2-3c1-1 2-1 3 0l6 3c2 1 2 3 1 4-2 4-6 6-10 5-13-3-23-13-27-26-1-3 1-6 3-7Z"/></svg>;
+  return <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M31.9 7.5a24.4 24.4 0 0 0-20.8 37.1L7.6 57.5l13.2-3.5a24.4 24.4 0 1 0 11.1-46.5Z"/><path d="M22 19c2 13 10 21 23 23l4-6-8-4-3 4c-5-2-8-5-10-10l4-3-4-8-6 4Z"/></svg>;
 }
 
 export default function Contact() {
