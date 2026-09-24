@@ -6,11 +6,14 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.siteHeader{max-width:1280px;margin:auto;height:84px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-.wordmark{font-size:1rem;font-weight:700;letter-spacing:-.02em;color:var(--accent)}
-.siteHeader nav{display:flex;gap:28px;font-size:.78rem}
+.siteHeader{max-width:1280px;margin:auto;height:96px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.wordmark{display:inline-flex;align-items:center;gap:13px;font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;font-weight:500;letter-spacing:-.025em;color:var(--ink);white-space:nowrap}
+.wordmark::before{content:"";width:42px;height:42px;flex:0 0 42px;border-radius:2px;background:url("/icon.png") center/cover no-repeat}
+.siteHeader nav{display:flex;align-items:center;gap:29px;font-size:.9rem}
 .siteHeader nav a{color:var(--muted)}
 .siteHeader nav a:hover{color:var(--accent)}
+.siteHeader nav .languageSwitch{border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:9px 15px;line-height:1;font-weight:700;letter-spacing:.08em;transition:.2s}
+.siteHeader nav .languageSwitch:hover{background:var(--accent);color:white}
 .heroClean,.section,.contactClean,.pageHero,.allTestimonials{max-width:1280px;margin:auto;padding-left:32px;padding-right:32px}
 .heroClean{padding-top:100px;padding-bottom:110px}
 .eyebrow{margin:0 0 26px;font-size:.69rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700}
@@ -39,13 +42,17 @@ img{display:block;max-width:100%}
 .simpleRows span{font-size:.7rem;color:var(--accent)}
 .simpleRows h3{margin:0;font-size:1.45rem;font-weight:500;color:var(--accent)}
 .simpleRows p{margin:0;color:var(--muted);line-height:1.6}
-.aboutClean{display:grid;grid-template-columns:1.15fr .85fr;gap:100px}
-.bodyCopy{padding-top:39px}
+.aboutClean{display:grid;grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr);gap:86px;align-items:start}
+.aboutVisual{display:flex;flex-direction:column}
+.aboutPortrait{width:100%;height:520px;object-fit:cover;object-position:center 28%;border-bottom:7px solid var(--accent)}
+.aboutContent{padding-top:39px}
+.bodyCopy{padding-top:34px;max-width:620px}
 .bodyCopy p{margin:0 0 22px;color:var(--muted);font-size:1rem;line-height:1.75}
 .textLink{display:inline-block;margin-top:12px;padding-bottom:5px;border-bottom:1px solid;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 .aboutLinks{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
 .sectionAction{margin-top:48px;display:flex;justify-content:flex-end}
 .testimonialPreview{background:var(--ink);color:white}
+.testimonialPreview .eyebrow{color:#f4dfe4}
 .testimonialHeading{grid-template-columns:1fr 2fr 1fr}
 .testimonialHeading>p:last-child{color:#aaa;line-height:1.6}
 .previewGrid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #ffffff3b;border-left:1px solid #ffffff3b;margin-bottom:40px}
@@ -133,13 +140,32 @@ img{display:block;max-width:100%}
 .credentialRows article>a{border:1px solid var(--accent);color:var(--accent);border-radius:99px;padding:10px 15px;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;transition:.2s}
 .credentialRows article>a:hover{background:var(--accent);color:white}
 .credentialStatus{font-size:.7rem;color:var(--muted);font-style:italic}
+.contactPage{max-width:1280px;margin:auto;padding:72px 32px 96px}
+.contactPageIntro{text-align:center;margin:0 auto 44px}
+.contactPageIntro h1{margin:0;color:var(--accent);font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.25rem,5vw,5.35rem);font-weight:400;line-height:1;letter-spacing:-.045em}
+.contactPageIntro p{margin:24px 0 0;color:var(--ink);font-size:clamp(1.1rem,1.55vw,1.35rem);line-height:1.5}
+.contactOptions{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:920px;margin:auto}
+.contactOption{min-height:340px;padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid var(--accent);transition:transform .25s ease,background .25s ease,color .25s ease}
+.contactOption:first-child{background:var(--accent);color:white}
+.contactOption:not(:first-child){color:var(--accent)}
+.contactOption:not(:first-child)>span:not(.contactIcon){color:var(--ink)}
+.contactOption:hover{transform:translateY(-4px)}
+.contactIcon{width:54px;height:54px;margin-bottom:28px}
+.contactIcon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.contactIcon svg:has(.whatsappHandset){stroke-width:2.6}
+.whatsappHandset{fill:currentColor;stroke:none}
+.contactOption h2{margin:0 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.15rem,3vw,3.15rem);font-weight:400;line-height:1;color:inherit}
+.contactOption>span{font-size:1.03rem;letter-spacing:.02em}
+.contactCta{margin-top:42px;padding-bottom:8px;border-bottom:1px solid currentColor;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 @media(max-width:800px){
   .siteHeader{height:auto;min-height:76px;padding:20px;align-items:flex-start}
-  .siteHeader nav{gap:13px;flex-wrap:wrap;justify-content:flex-end;max-width:240px;font-size:.68rem}
+  .wordmark{font-size:1.08rem;gap:9px}
+  .wordmark::before{width:34px;height:34px;flex-basis:34px}
+  .siteHeader nav{gap:13px;flex-wrap:wrap;justify-content:flex-end;max-width:270px;font-size:.8rem}
   .heroClean,.section,.contactClean,.pageHero,.allTestimonials{padding-left:20px;padding-right:20px}
   .heroClean{padding-top:72px;padding-bottom:80px}
   .heroClean h1{font-size:2.85rem}
-  .heroIntro,.sectionHeading,.testimonialHeading,.aboutClean{grid-template-columns:1fr;gap:28px}
+  .heroIntro,.sectionHeading,.testimonialHeading{grid-template-columns:1fr;gap:28px}
   .section{padding-top:78px;padding-bottom:78px}
   .sectionHeading{margin-bottom:40px}
   .projectGrid{grid-template-columns:1fr;gap:48px}
@@ -147,7 +173,11 @@ img{display:block;max-width:100%}
   .viewProject{opacity:1;transform:none}
   .simpleRows article{grid-template-columns:44px 1fr}
   .simpleRows p{grid-column:2}
-  .aboutClean{gap:22px}
+  .aboutClean{grid-template-columns:1fr;gap:28px}
+  .aboutVisual{display:grid;grid-template-columns:1fr 104px;gap:18px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:20px}
+  .aboutVisual .eyebrow{margin:8px 0 0}
+  .aboutPortrait{grid-column:2;width:104px;height:118px;object-position:center 24%;border-bottom:4px solid var(--accent)}
+  .aboutContent{padding-top:0}
   .bodyCopy{padding-top:0}
   .previewGrid{grid-template-columns:1fr}
   .previewGrid article{min-height:230px}
@@ -176,5 +206,14 @@ img{display:block;max-width:100%}
   .credentialRows article>a,.credentialStatus{grid-column:2;justify-self:start}
   .educationGrid article{grid-template-columns:58px 1fr;padding:24px 20px}
   .educationGrid img,.credentialRows article>img{width:52px;height:52px}
+  .contactPage{padding:48px 18px 68px}
+  .contactPageIntro{margin-bottom:34px}
+  .contactPageIntro h1{font-size:2.7rem}
+  .contactOptions{grid-template-columns:1fr}
+  .contactOption{min-height:270px;padding:32px 20px}
+  .contactIcon{width:48px;height:48px;margin-bottom:22px}
+  .contactOption h2{font-size:2.35rem}
+  .contactOption>span{font-size:.93rem}
+  .contactCta{margin-top:32px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.projectVisual img{transition:none}}
