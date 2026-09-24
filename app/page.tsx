@@ -15,7 +15,7 @@ function Header() {
       <a href="#sobre">Sobre</a>
       <Link href="/formacao">Formação</Link>
       <Link href="/depoimentos">Depoimentos</Link>
-      <a href="mailto:rafaaranteswork@gmail.com">Contato</a>
+      <Link href="/contato">Contato</Link>
       <Link className="languageSwitch" href="/en" aria-label="View site in English">EN</Link>
     </nav>
   </header>;
