@@ -275,3 +275,17 @@ html{background:var(--ivory)}body{background:var(--ivory);color:var(--ink)}
 .contactPage.texturedHero .contactIcon svg{stroke-width:1.9}
 @media(max-width:900px){.portfolioGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolioGrid .masonryTile,.portfolioGrid .masonryTile:nth-last-child(2),.portfolioGrid .masonryTile:last-child{grid-column:span 1}}
 @media(max-width:600px){.portfolioGrid{grid-template-columns:1fr;padding:4px 12px 64px}.portfolioGrid .masonryTile{aspect-ratio:4 / 3}.testimonialShowcase h2{margin-bottom:38px}}
+
+/* Editorial services */
+.servicesEditorial{margin:105px clamp(18px,3vw,48px);padding:clamp(48px,6vw,86px) clamp(22px,4vw,64px);background:var(--blush);color:var(--wine);border:1px solid rgba(104,21,45,.12)}
+.servicesEditorial header{display:grid;grid-template-columns:minmax(180px,.72fr) minmax(0,1.28fr);gap:clamp(30px,7vw,110px);align-items:start;padding-bottom:clamp(48px,7vw,94px)}
+.servicesEditorial header .eyebrow{margin:4px 0;color:var(--wine)}
+.servicesEditorial h2{max-width:900px;margin:0;font-size:clamp(3rem,5.7vw,6rem);font-weight:400;line-height:.96;letter-spacing:-.065em;color:var(--ink)}
+.serviceRow{display:grid;grid-template-columns:90px minmax(230px,.8fr) minmax(320px,1.2fr);gap:40px;align-items:center;min-height:116px;border-top:1px solid rgba(104,21,45,.34);transition:background-color .25s ease,padding .25s ease}
+.serviceRow:last-child{border-bottom:1px solid rgba(104,21,45,.16)}
+.serviceRow:hover{padding-left:14px;background:rgba(255,255,255,.18)}
+.serviceRow>span{font-size:.72rem;font-variant-numeric:tabular-nums}
+.serviceRow h3{margin:0;font-size:clamp(1.55rem,2.3vw,2.45rem);font-weight:450;letter-spacing:-.035em}
+.serviceRow p{margin:0;color:var(--muted);font-size:clamp(1rem,1.35vw,1.25rem);line-height:1.55}
+@media(max-width:800px){.servicesEditorial header{grid-template-columns:1fr;gap:24px}.serviceRow{grid-template-columns:48px 1fr;gap:16px 22px;padding:26px 0}.serviceRow p{grid-column:2}.serviceRow:hover{padding-left:0}}
+@media(max-width:600px){.servicesEditorial{margin:60px 18px;padding:38px 22px}.servicesEditorial h2{font-size:clamp(2.55rem,13vw,4rem)}.serviceRow{grid-template-columns:38px 1fr;min-height:0}.serviceRow h3{font-size:1.5rem}.serviceRow p{font-size:.98rem}}
