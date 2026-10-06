@@ -237,3 +237,27 @@ html{background:var(--ivory)}body{background:var(--ivory);color:var(--ink)}
 .threeOptions{grid-template-columns:repeat(3,minmax(0,1fr))}.contactPage.texturedHero{background-attachment:fixed}.contactPage.texturedHero .contactOption{background:rgba(104,21,45,.88);border-color:rgba(255,255,255,.25);color:#fff}.contactPage.texturedHero .contactIcon{color:#fff}.contactIcon svg{width:42px;height:42px;stroke:currentColor;fill:none}@media(max-width:800px){.threeOptions{grid-template-columns:1fr}}
 @media(max-width:1000px){.premiumBrand>span:last-child{display:none}.premiumNav{max-width:calc(100% - 90px)}.premiumNav a{padding:0 10px}.premiumNav svg{display:none}}
 @media(max-width:600px){.premiumHeader{height:72px;padding:0 12px}.monogram{width:46px;height:46px}.premiumNav{position:absolute;right:12px;top:10px;width:auto;min-width:108px;justify-content:flex-end;padding:5px}.premiumNav>a:not(.localeButton){display:none}.premiumNav .menuButton{display:flex!important;padding:0;width:44px;justify-content:center}.premiumNav.open{left:12px;right:12px;width:auto;padding:58px 8px 8px;display:grid;grid-template-columns:1fr 1fr;background:rgba(247,242,237,.96);border-radius:24px}.premiumNav.open>a:not(.localeButton){display:flex}.premiumNav.open .localeButton,.premiumNav.open .menuButton{position:absolute;top:6px}.premiumNav.open .localeButton{right:58px}.premiumNav.open .menuButton{right:6px}.premiumNav svg{display:block}.premiumFooter{flex-direction:column}.texturedHero{background-position:58% center}}
+
+/* Contrast, spacing and texture polish */
+.textureWine{background-image:linear-gradient(125deg,rgba(34,4,13,.98),rgba(104,21,45,.9)),radial-gradient(rgba(255,255,255,.12) .65px,transparent .65px);background-size:auto,7px 7px}
+.textureIvory{background-image:radial-gradient(rgba(104,21,45,.14) .6px,transparent .6px);background-size:7px 7px}
+.texturedHero .eyebrow,.texturedHero h1,.texturedHero>p,.texturedHero .contactPageIntro p{color:var(--ivory)}
+.contactPageIntro h1{color:var(--ivory);text-shadow:0 2px 20px rgba(255,255,255,.24)}
+.contactPageIntro p{color:var(--ivory)}
+.contactPage.texturedHero .contactOption>span:not(.contactIcon){color:var(--ivory)}
+.contactPage.texturedHero .contactOption h2,.contactPage.texturedHero .contactCta{color:#fff}
+.aboutPremium{color:var(--wine);border:1px solid var(--line);box-shadow:0 24px 65px rgba(69,15,31,.08)}
+.aboutPremium .eyebrow,.aboutPremium h2,.aboutPremium p{color:var(--wine)}
+.aboutPremium>div:last-child{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.aboutPremium>div:last-child h2,.aboutPremium>div:last-child p{margin:0}
+.sectionHeading{grid-template-columns:1fr 2fr auto;align-items:end}
+.projectsCta{justify-self:end;margin:0;padding:13px 20px;border:1px solid var(--wine);background:var(--wine);color:#fff;box-shadow:0 12px 28px rgba(104,21,45,.2)}
+.masonryTile>span{opacity:0;transform:translateY(14px);transition:opacity .3s ease,transform .3s ease}
+.masonryTile:hover>span,.masonryTile:focus-visible>span{opacity:1;transform:none}
+.contactClean>a{padding:13px 20px;border:1px solid var(--wine);border-radius:999px;line-height:1.25;overflow-wrap:anywhere}
+.sectionHeading h2,.aboutPremium h2,.contactClean h2,.pageHero h1{margin-bottom:0}
+.contactClean .eyebrow{margin-bottom:24px}.contactClean h2{margin-bottom:34px}
+.contactPageIntro .eyebrow{margin-bottom:22px}.contactPageIntro h1+.contactPageIntro p{margin-top:26px}
+@media(hover:none){.masonryTile>span{opacity:1;transform:none}}
+@media(max-width:800px){.sectionHeading{grid-template-columns:1fr}.projectsCta{justify-self:start}.aboutPremium>div:last-child{gap:18px}}
+@media(max-width:600px){.contactClean>a{max-width:100%;font-size:.9rem}.contactPageIntro h1{text-shadow:0 2px 16px rgba(255,255,255,.22)}}

@@ -27,7 +27,7 @@ const testimonials = [
 export default function TestimonialsPage() {
   return <main>
     <SiteHeader locale="pt" />
-    <section className="pageHero texturedHero textureFur">
+    <section className="pageHero texturedHero textureWine">
       <p className="eyebrow">Depoimentos de clientes</p>
       <h1>Experiências reais, contadas por quem confiou no meu trabalho.</h1>
       <p>Todos os depoimentos reunidos em um só lugar. Quando disponível, você pode abrir a avaliação original na Workana.</p>

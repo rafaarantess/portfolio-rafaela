@@ -13,7 +13,7 @@ export default async function ProjectPage({params}:{params:Promise<{slug:string}
   const currentIndex=projects.findIndex(item=>item.slug===slug); const next=projects[(currentIndex+1)%projects.length];
   return <main>
     <SiteHeader locale="pt" />
-    <section className="caseHero texturedHero textureSatin"><div><p className="eyebrow">{project.category}</p><h1>{project.title}</h1></div><p>{project.summary}</p></section>
+    <section className="caseHero texturedHero textureWine"><div><p className="eyebrow">{project.category}</p><h1>{project.title}</h1></div><p>{project.summary}</p></section>
     <div className="caseCover">{project.coverKind==="pdf"?<iframe src={`${project.cover}#page=1&view=Fit&zoom=page-fit&toolbar=0`} title={`Apresentação do projeto ${project.title}`}/>:<img src={project.cover} alt={`Projeto ${project.title}`}/>}</div>
     <section className="caseOverview"><div><p className="eyebrow">O projeto</p><h2>Clareza antes da forma.</h2></div><div className="caseText"><h3>Desafio</h3><p>{project.challenge}</p><h3>Meu papel</h3><p>{project.role}</p></div><div className="deliverables"><h3>Entregas</h3>{project.deliverables.map(item=><span key={item}>{item}</span>)}</div></section>
     {project.documents?.map(doc=><section className="documentShowcase" key={doc.url}><div><p className="eyebrow">Visualização do trabalho</p><h2>{doc.label}</h2><a className="button" href={doc.url} target="_blank" rel="noreferrer">Abrir em tela cheia ↗</a></div><iframe src={`${doc.url}#view=FitH`} title={doc.label}/></section>)}

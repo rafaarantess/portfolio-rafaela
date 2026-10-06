@@ -26,7 +26,7 @@ const credentials = [
 export default function EducationPage(){return <main>
   <SiteHeader/>
 
-  <section className="pageHero educationHero texturedHero textureSatin"><p className="eyebrow">Formação & credenciais</p><h1>Repertório que conecta comportamento, estratégia e criação.</h1><p>Minha formação combina Psicologia e Marketing Digital, complementada por estudos em marca, negócios, experiência do cliente e comunicação.</p></section>
+  <section className="pageHero educationHero texturedHero textureWine"><p className="eyebrow">Formação & credenciais</p><h1>Repertório que conecta comportamento, estratégia e criação.</h1><p>Minha formação combina Psicologia e Marketing Digital, complementada por estudos em marca, negócios, experiência do cliente e comunicação.</p></section>
 
   <section className="educationSection">
     <header><p className="eyebrow">Formação acadêmica</p><span>Graduação</span></header>
