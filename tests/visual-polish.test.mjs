@@ -7,6 +7,9 @@ const ptHome = fs.readFileSync("app/page.tsx", "utf8");
 const enHome = fs.readFileSync("app/en/page.tsx", "utf8");
 const ptContact = fs.readFileSync("app/contato/page.tsx", "utf8");
 const enContact = fs.readFileSync("app/en/contact/page.tsx", "utf8");
+const projects = fs.readFileSync("app/projects.ts", "utf8");
+const projectsEn = fs.readFileSync("app/projects-en.ts", "utf8");
+const icons = fs.readFileSync("app/components/icons.tsx", "utf8");
 
 test("contact uses the single approved texture and high contrast copy", () => {
   assert.match(ptContact, /textureWine/);
@@ -35,4 +38,30 @@ test("section and contact links use complete pill button spacing", () => {
   assert.match(enHome, /className="textLink projectsCta"/);
   assert.match(css, /\.projectsCta[^}]*justify-self:\s*end/s);
   assert.match(css, /\.contactClean>a[^}]*padding:\s*[^;]+/s);
+});
+
+test("portfolio adds Biodose and Delivery in both languages", () => {
+  for (const source of [projects, projectsEn]) {
+    assert.match(source, /slug:"biodose-natural"/);
+    assert.match(source, /slug:"comunicacao-delivery"/);
+  }
+  assert.ok(fs.existsSync("public/projects/biodose-natural.png"));
+  assert.ok(fs.existsSync("public/projects/comunicacao-delivery.png"));
+});
+
+test("projects gallery has a dark uniform grid", () => {
+  assert.match(css, /\.portfolioGrid[^}]*background:\s*#(?:0[0-9a-f]{5}|1[0-9a-f]{5})/i);
+  assert.match(css, /\.portfolioGrid[^}]*grid-template-columns:\s*repeat\(/s);
+  assert.match(css, /\.portfolioGrid \.masonryTile[^}]*aspect-ratio:\s*4\s*\/\s*3/s);
+});
+
+test("dark sections use white and blush copy with testimonial spacing", () => {
+  assert.match(css, /\.testimonialShowcase \.eyebrow[^}]*color:\s*#fff/s);
+  assert.match(css, /\.texturedHero>p:last-child[^}]*color:\s*var\(--blush\)/s);
+  assert.match(css, /\.testimonialShowcase h2[^}]*margin-bottom:\s*[4-9]\dpx/s);
+});
+
+test("WhatsApp icon uses a recognisable handset path", () => {
+  assert.match(icons, /M8\.1 6\.8/);
+  assert.match(icons, /c\.4 2\.7 2\.4 4\.8 5\.2 5\.5/);
 });

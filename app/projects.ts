@@ -86,6 +86,22 @@ export const projects: Project[] = [
     images:["/projects/doctomatic.png"]
   },
   {
+    slug:"biodose-natural", title:"Biodose Natural", category:"Conteúdo para redes sociais", year:"2026", featured:true,
+    summary:"Um sistema de conteúdo que apresenta produtos naturais com clareza, consistência e apelo visual.",
+    challenge:"Organizar benefícios, ingredientes e contextos de uso em uma presença social informativa, leve e reconhecível.",
+    role:"Direção visual, composição, hierarquia de conteúdo e design das peças para Instagram.",
+    deliverables:["Direção visual","Grid para Instagram","Posts educativos","Apresentação de produtos"],
+    cover:"/projects/biodose-natural.png", images:["/projects/biodose-natural.png"]
+  },
+  {
+    slug:"comunicacao-delivery", title:"Comunicação Delivery", category:"Conteúdo para redes sociais", year:"2026", featured:true,
+    summary:"Comunicação direta e dinâmica para um serviço de entregas ágil, seguro e próximo.",
+    challenge:"Transformar os diferenciais do serviço em uma sequência visual fácil de entender e adequada ao ritmo das redes sociais.",
+    role:"Conceito visual, organização das mensagens, composição e design da campanha social.",
+    deliverables:["Campanha para Instagram","Sistema de posts","Conteúdo informativo","Chamadas para conversão"],
+    cover:"/projects/comunicacao-delivery.png", images:["/projects/comunicacao-delivery.png"]
+  },
+  {
     slug:"ensinar-transforma", title:"Ensinar Transforma", category:"Identidade visual", year:"2025", featured:false,
     summary:"Uma identidade acessível e coerente para uma iniciativa ligada à educação.",
     challenge:"Criar uma linguagem visual acolhedora, reconhecível e simples de aplicar em diferentes pontos de contato.",

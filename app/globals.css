@@ -261,3 +261,17 @@ html{background:var(--ivory)}body{background:var(--ivory);color:var(--ink)}
 @media(hover:none){.masonryTile>span{opacity:1;transform:none}}
 @media(max-width:800px){.sectionHeading{grid-template-columns:1fr}.projectsCta{justify-self:start}.aboutPremium>div:last-child{gap:18px}}
 @media(max-width:600px){.contactClean>a{max-width:100%;font-size:.9rem}.contactPageIntro h1{text-shadow:0 2px 16px rgba(255,255,255,.22)}}
+
+/* Portfolio grid and dark-surface contrast */
+.portfolioGrid{columns:auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;background:#0d0a0b;padding:5px clamp(10px,2vw,28px) 96px}
+.portfolioGrid .masonryTile{grid-column:span 2;aspect-ratio:4 / 3;margin:0;background:#161113}
+.portfolioGrid .masonryTile:nth-last-child(2),.portfolioGrid .masonryTile:last-child{grid-column:span 3}
+.portfolioGrid .masonryTile img,.portfolioGrid .masonryTile iframe{width:100%;height:100%;min-height:0;object-fit:cover}
+.testimonialShowcase .eyebrow{color:#fff}
+.testimonialShowcase h2{margin:0;margin-bottom:56px}
+.testimonialShowcase span{color:var(--blush)}
+.texturedHero>p:last-child,.pageHero.texturedHero>p:last-child{color:var(--blush)}
+.texturedHero .eyebrow{color:#fff}
+.contactPage.texturedHero .contactIcon svg{stroke-width:1.9}
+@media(max-width:900px){.portfolioGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolioGrid .masonryTile,.portfolioGrid .masonryTile:nth-last-child(2),.portfolioGrid .masonryTile:last-child{grid-column:span 1}}
+@media(max-width:600px){.portfolioGrid{grid-template-columns:1fr;padding:4px 12px 64px}.portfolioGrid .masonryTile{aspect-ratio:4 / 3}.testimonialShowcase h2{margin-bottom:38px}}
