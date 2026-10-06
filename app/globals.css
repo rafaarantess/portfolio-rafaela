@@ -263,8 +263,8 @@ html{background:var(--ivory)}body{background:var(--ivory);color:var(--ink)}
 @media(max-width:600px){.contactClean>a{max-width:100%;font-size:.9rem}.contactPageIntro h1{text-shadow:0 2px 16px rgba(255,255,255,.22)}}
 
 /* Portfolio grid and dark-surface contrast */
-.portfolioGrid{columns:auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;width:calc(100% - clamp(28px,8vw,120px));max-width:1420px;margin:0 auto 110px;padding:clamp(18px,2.5vw,34px);background:var(--ivory);background-image:radial-gradient(rgba(104,21,45,.14) .6px,transparent .6px);background-size:7px 7px;border:1px solid var(--line);border-radius:32px;box-shadow:0 28px 70px rgba(69,15,31,.12);overflow:hidden}
-.portfolioGrid .masonryTile{grid-column:span 2;aspect-ratio:4 / 3;margin:0;background:#e7ddd5;border-radius:16px}
+.portfolioGrid{columns:auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;background:#0d0a0b;padding:5px clamp(10px,2vw,28px) 96px}
+.portfolioGrid .masonryTile{grid-column:span 2;aspect-ratio:4 / 3;margin:0;background:#161113}
 .portfolioGrid .masonryTile:nth-last-child(2),.portfolioGrid .masonryTile:last-child{grid-column:span 3}
 .portfolioGrid .masonryTile img,.portfolioGrid .masonryTile iframe{width:100%;height:100%;min-height:0;object-fit:cover}
 .testimonialShowcase .eyebrow{color:#fff}
@@ -274,4 +274,4 @@ html{background:var(--ivory)}body{background:var(--ivory);color:var(--ink)}
 .texturedHero .eyebrow{color:#fff}
 .contactPage.texturedHero .contactIcon svg{stroke-width:1.9}
 @media(max-width:900px){.portfolioGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolioGrid .masonryTile,.portfolioGrid .masonryTile:nth-last-child(2),.portfolioGrid .masonryTile:last-child{grid-column:span 1}}
-@media(max-width:600px){.portfolioGrid{grid-template-columns:1fr;width:calc(100% - 24px);margin-bottom:64px;padding:12px;border-radius:22px}.portfolioGrid .masonryTile{aspect-ratio:4 / 3;border-radius:12px}.testimonialShowcase h2{margin-bottom:38px}}
+@media(max-width:600px){.portfolioGrid{grid-template-columns:1fr;padding:4px 12px 64px}.portfolioGrid .masonryTile{aspect-ratio:4 / 3}.testimonialShowcase h2{margin-bottom:38px}}
