@@ -49,8 +49,12 @@ test("portfolio adds Biodose and Delivery in both languages", () => {
   assert.ok(fs.existsSync("public/projects/comunicacao-delivery.png"));
 });
 
-test("projects gallery has a dark uniform grid", () => {
-  assert.match(css, /\.portfolioGrid[^}]*background:\s*#(?:0[0-9a-f]{5}|1[0-9a-f]{5})/i);
+test("projects gallery keeps its square layout on an off-white texture", () => {
+  const portfolioGrid = css.match(/\.portfolioGrid\{([^}]*)\}/)?.[1] ?? "";
+
+  assert.match(portfolioGrid, /background-color:\s*var\(--ivory\)/);
+  assert.match(portfolioGrid, /background-image:\s*radial-gradient\(/);
+  assert.doesNotMatch(portfolioGrid, /border-radius/);
   assert.match(css, /\.portfolioGrid[^}]*grid-template-columns:\s*repeat\(/s);
   assert.match(css, /\.portfolioGrid \.masonryTile[^}]*aspect-ratio:\s*4\s*\/\s*3/s);
 });
