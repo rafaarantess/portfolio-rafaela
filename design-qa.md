@@ -1,17 +1,18 @@
-# Design QA — Serviços na home
+# Design QA — Redesign dos serviços na home
 
 ## Referência
 
-- Seção editorial em rosa-claro, com chamada ampla e três linhas numeradas.
-- Hierarquia horizontal no desktop e leitura vertical clara no mobile.
+- Simulação aprovada com fundo off-white texturizado, título serifado vinho e três cards rosa-claro.
+- Solicitação adicional: tipografia sólida, sem efeito, degradê, contorno ou sombra.
 
 ## Comparação
 
-- Desktop (1440 px): título, rótulo, numeração, nomes e descrições seguem a hierarquia da referência.
-- Mobile (390 px): os três serviços viram blocos legíveis, sem cortes ou sobreposição.
+- Desktop (1440 px): título, rótulo, numeração e três cards seguem a hierarquia da simulação aprovada.
+- Mobile (390 px): os cards são empilhados com textos legíveis, sem cortes ou sobreposição.
 - Não há overflow horizontal em nenhum dos dois tamanhos.
-- A paleta usa os tokens vinho, rosa e cinza já presentes no portfólio.
-- O segundo parágrafo do bloco “Sobre mim” preserva o espaçamento existente entre título, texto e botão.
+- O título usa Georgia em vinho sólido e `text-shadow: none`.
+- A paleta usa os tokens vinho, rosa, marfim e cinza já presentes no portfólio.
+- Não foram encontrados problemas P0, P1 ou P2 na comparação visual.
 
 ## Resultado
 
