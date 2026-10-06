@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteHeader } from "../components/SiteHeader";
 
 export const metadata: Metadata = {
   title:"Formação & Credenciais — Rafaela Arantes",
@@ -23,9 +24,9 @@ const credentials = [
 ];
 
 export default function EducationPage(){return <main>
-  <header className="siteHeader"><Link className="wordmark" href="/">Rafaela Arantes</Link><nav><Link href="/">Início</Link><Link href="/projetos">Projetos</Link><Link href="/depoimentos">Depoimentos</Link><Link href="/contato">Contato</Link><Link className="languageSwitch" href="/en/education">EN</Link></nav></header>
+  <SiteHeader/>
 
-  <section className="pageHero educationHero"><p className="eyebrow">Formação & credenciais</p><h1>Repertório que conecta comportamento, estratégia e criação.</h1><p>Minha formação combina Psicologia e Marketing Digital, complementada por estudos em marca, negócios, experiência do cliente e comunicação.</p></section>
+  <section className="pageHero educationHero texturedHero textureSatin"><p className="eyebrow">Formação & credenciais</p><h1>Repertório que conecta comportamento, estratégia e criação.</h1><p>Minha formação combina Psicologia e Marketing Digital, complementada por estudos em marca, negócios, experiência do cliente e comunicação.</p></section>
 
   <section className="educationSection">
     <header><p className="eyebrow">Formação acadêmica</p><span>Graduação</span></header>

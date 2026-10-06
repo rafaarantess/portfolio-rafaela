@@ -33,16 +33,24 @@ export const projects: Project[] = [
     challenge:"Estruturar roteiro, orientações e informações comerciais em um folder que fosse funcional e transmitisse a atmosfera da experiência.",
     role:"Interpretação do briefing, organização da informação, direção visual e diagramação.",
     deliverables:["Folder institucional","Hierarquia de conteúdo","Direção visual"], cover:"/projects/aiurotrek.png",
-    images:["/projects/aiurotrek.png"],
+    images:["/cases/aiuruotrek/brochure-front.png","/cases/aiuruotrek/brochure-open.png","/cases/aiuruotrek/folder.png"],
     testimonial:{quote:"Conseguiu traduzir exatamente minhas ideias. A forma que colocou as informações ficou clara e com a estética que eu buscava.",name:"Felipe Augusto · Aiurotrek"}
   },
   {
-    slug:"pendulum", title:"Pendulum", category:"Campanha multiformato", year:"2025", featured:true,
-    summary:"Um sistema de banners adaptado para desktop, mobile e Instagram.",
-    challenge:"Manter a força da campanha e a leitura das ofertas em formatos com proporções e contextos diferentes.",
+    slug:"pendulum-web", title:"Pendulum — Banners para website", category:"Campanha digital para website", year:"2025", featured:true,
+    summary:"Uma campanha adaptada para desktop e celular com impacto e leitura clara.",
+    challenge:"Manter a força da campanha e a leitura das ofertas em formatos digitais com proporções diferentes.",
     role:"Design das peças e adaptação responsiva da campanha. O site e a identidade da marca não fazem parte do escopo.",
-    deliverables:["Banner desktop","Banner mobile","Peça para Instagram"], cover:"/projects/pendulum-social.png",
-    images:["/projects/pendulum-social.png","/cases/pendulum/desktop.png","/cases/pendulum/mobile.png","/cases/pendulum/instagram.png"]
+    deliverables:["Aplicação no website","Banner desktop","Banner mobile"], cover:"/cases/pendulum/computer.png",
+    images:["/cases/pendulum/computer.png","/cases/pendulum/desktop.png","/cases/pendulum/mobile.png"]
+  },
+  {
+    slug:"pendulum-instagram", title:"Pendulum — Instagram", category:"Conteúdo para redes sociais", year:"2025", featured:true,
+    summary:"Direção visual sofisticada para a presença da marca no Instagram.",
+    challenge:"Traduzir a campanha promocional para uma peça social clara, desejável e coerente com a marca.",
+    role:"Design da peça e adaptação da campanha para Instagram.",
+    deliverables:["Peça para Instagram","Adaptação da campanha"], cover:"/projects/pendulum-social.png",
+    images:["/projects/pendulum-social.png","/cases/pendulum/instagram.png"]
   },
   {
     slug:"micaela-castaldi", title:"Micaela Castaldi", category:"Identidade visual", year:"2026", featured:true,

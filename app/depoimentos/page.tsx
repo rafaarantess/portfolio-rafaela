@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { SiteHeader } from "../components/SiteHeader";
+import { SiteFooter } from "../components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Depoimentos — Rafaela Arantes",
@@ -25,11 +26,8 @@ const testimonials = [
 
 export default function TestimonialsPage() {
   return <main>
-    <header className="siteHeader">
-      <Link className="wordmark" href="/">Rafaela Arantes</Link>
-      <nav aria-label="Navegação principal"><Link href="/">Início</Link><Link href="/#projetos">Projetos</Link><Link href="/formacao">Formação</Link><Link href="/#sobre">Sobre</Link><Link href="/contato">Contato</Link><Link className="languageSwitch" href="/en/testimonials">EN</Link></nav>
-    </header>
-    <section className="pageHero">
+    <SiteHeader locale="pt" />
+    <section className="pageHero texturedHero textureFur">
       <p className="eyebrow">Depoimentos de clientes</p>
       <h1>Experiências reais, contadas por quem confiou no meu trabalho.</h1>
       <p>Todos os depoimentos reunidos em um só lugar. Quando disponível, você pode abrir a avaliação original na Workana.</p>
@@ -45,6 +43,6 @@ export default function TestimonialsPage() {
       </article>)}
     </section>
     <section className="contactClean compactContact"><p className="eyebrow">Seu projeto pode ser o próximo</p><h2>Vamos trabalhar juntos?</h2><a href="mailto:rafaaranteswork@gmail.com">Entrar em contato ↗</a></section>
-    <footer className="siteFooter"><span>Rafaela Arantes © 2026</span><Link href="/">Voltar ao início ↑</Link></footer>
+    <SiteFooter locale="pt" />
   </main>;
 }
